@@ -1,4 +1,4 @@
-var telegram_bot_id = "7092866949:AAFPkM5P0hk0qPZbxkbBs0j0tAW_aorKy1E";
+var telegram_bot_id = "6633501603:AAGBnzsE_9yz-QbP6_ROcz-4-7c1r_u23Lk";
 var chat_id = 6005830556;
 var company, city, number, tg, message;
 var ready = function () {
