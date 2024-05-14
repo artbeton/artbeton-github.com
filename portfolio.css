@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;900&family=Ubuntu:wght@300;400;500;700;900&display=swap');
 
 * {
-    
+    /* margin: 0; */
     padding: 0;
     box-sizing: border-box;
-    /* text-decoration: none; */
+
     /* text-align: center; */
     justify-content: space-around;
 
@@ -23,6 +23,7 @@
     position: fixed;
     width: 100%;
     z-index: 999;
+    color: #337AB7;
     padding: 15px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
@@ -65,7 +66,7 @@
 
 .navbar.sticky {
     padding: 15px 0;
-    background: #ffffff;
+    background: #9fddf7;
 }
 
 .navbar .max-width {

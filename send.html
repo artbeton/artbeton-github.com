@@ -122,7 +122,317 @@
         </div>
     </div>
 
-    <!-- <script src="https://telegram.org/js/telegram-web-app.js"></script> -->
+
+    <footer>
+        <div class='footer'>
+
+
+
+            <div
+                style='display:flex;flex-wrap:wrap;justify-content:space-around;width:100%;max-width:1200px;margin:40px auto'>
+                <style>
+                    .content {
+                        max-width: 1000px;
+                        width: 96%;
+                        margin-bottom: 80px;
+                    }
+
+                    .contact-block {
+                        min-height: 200px;
+                        background: hsla(0, 0%, 100%, 0);
+                        border-radius: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        border: solid 3px #00000038;
+                        padding: 10px;
+
+                    }
+
+                    .contact-block-header {
+                        border-radius: 10px 10px 0 0;
+                        display: flex;
+                        align-items: center;
+                        color: #ff6a00;
+                        padding: 10px;
+                    }
+
+
+                    .contact-block-content {
+                        color: #ffffffad;
+                        padding: 0 20px;
+                        font-size: 14px;
+                    }
+
+                    .contact-block-footer {
+                        margin-top: auto;
+                        display: flex;
+                        align-items: center;
+                        padding: 20px 10px;
+                        flex-wrap: wrap;
+                    }
+
+                    .contact-url-email,
+                    .contact-url-whatsapp {
+                        padding: 10px;
+                        border-radius: 8px;
+                        border: solid 1px #ffffff6b;
+                        color: #ffffffba;
+                        background: #0a0a0a4a;
+                        margin: 10px;
+                        text-decoration: none;
+                        transition: 0.5s;
+                        display: flex;
+
+                    }
+
+
+                    .contact-url-images-email {
+                        min-width: 22px;
+                        min-height: 22px;
+                        width: 22px;
+                        height: 22px;
+                        background-image: url("/frontent/Bot_Fantan/images/telegramicon.png");
+                        background-size: cover;
+                        margin-right: 10px;
+                    }
+
+                    .contact-url-images-whatsap {
+                        min-width: 22px;
+                        min-height: 22px;
+                        width: 22px;
+                        height: 22px;
+                        background-image: url("/frontent/Bot_Fantan/images/whatsapp.png");
+                        background-size: cover;
+                        margin-right: 10px;
+                    }
+
+
+                    .contact-url-email:hover {
+                        border: solid 1px #008af2;
+                        color: #000000;
+                    }
+
+                    .contact-url-whatsapp:hover {
+                        border: solid 1px #12a325;
+                        color: #000000;
+                    }
+
+                    .contact-url-telegram:hover {
+                        border: solid 1px #30a6e0;
+                        color: #000000;
+                    }
+
+
+                    .telegram-block {
+                        width: 100%;
+                        max-width: 360px;
+                        margin: 20px;
+                    }
+
+
+                    .qr-telegram {
+                        min-width: 100px;
+                        min-height: 100px;
+                        width: 100px;
+                        height: 100px;
+                        background-image: url("/frontent/Bot_Fantan/images/Kanal.png");
+                        background-size: cover;
+                        border-radius: 6px;
+                        margin: 4px;
+                    }
+
+                    .qr-telegram1 {
+                        min-width: 100px;
+                        min-height: 100px;
+                        width: 100px;
+                        height: 100px;
+                        background-image: url("https://faberlic.com/index.php?option=com_catalog&view=goods&id=1001475651217&Itemid=2075&lang=ru");
+                        background-size: cover;
+                        border-radius: 6px;
+                        margin: 9px 89px;
+                    }
+
+                    .qr-telegram2 {
+                        min-width: 131px;
+                        min-height: 100px;
+                        width: 100px;
+                        height: 100px;
+                        background-image: url("img/gosht/Chuchvara.jpeg");
+                        background-size: cover;
+                        border-radius: 6px;
+                        margin: 9px 95px;
+                    }
+
+                    .contact-url-telegram {
+
+                        padding: 12px;
+                        border-radius: 0 0 8px 8px;
+                        border: solid 1px #ffffff6b;
+                        color: #312e2eba;
+                        background: #5694fc54;
+                        text-decoration: none;
+                        transition: 0.5s;
+                        display: flex;
+                        font-size: 14px;
+                        justify-content: center;
+                    }
+
+
+                    .ili {
+                        position: absolute;
+                        background: #1a212b;
+                        padding: 0 10px;
+                        left: 45%;
+                        bottom: -8px;
+                        font-size: 13px;
+                        border-radius: 4px;
+                        color: #a7e2ffc2;
+                    }
+
+                    .telegram-info {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 20px;
+                        text-align: center;
+                    }
+
+
+                    @media (max-width:900px) {
+
+                        .telegram-info {
+                            display: none;
+                        }
+
+                    }
+
+                    @media (max-width:400px) {
+
+
+                        .telegram-block {
+                            margin: 20px 10px;
+                        }
+                    }
+
+                    .images-telegram {
+                        min-width: 18px;
+                        min-height: 18px;
+                        width: 18px;
+                        height: 18px;
+                        cursor: pointer;
+                        background-image: url(/frontent/Bot_Fantan/images/telegramicon.png);
+                        background-size: cover;
+                        margin-right: 5px
+                    }
+
+                    .paylogo {
+                        position: absolute;
+                        width: 190px;
+                        height: 30px;
+                        background-image: url(img/Ecommerce-Food.24.png);
+                        background-size: cover;
+                        margin: 20px;
+                        right: 0;
+                        opacity: .6
+                    }
+
+                    @media (max-width: 980px) {
+                        .paylogo {
+                            display: none
+                        }
+                    }
+                </style>
+                <div class='footerInfo'>
+                    <p style='color:#ed7d31;margin-top:12px'>Социальные сети</p>
+
+
+                    <div style='display:flex;height:30px;align-items:center'>
+                        <div class='images-telegram'></div>
+                        <a target='blank' style='color:#58bced' href='https://t.me/fantanuz'>You tube</a>
+                        
+                    </div>
+                    <div style='display:flex;height:30px;align-items:center'>
+                        <div class='images-telegram'></div>
+                        <a target='blank' style='color:#58bced' href='https://t.me/fantanuz'>Tik tok</a>
+                        
+                    </div>
+
+                    
+                </div>
+
+                <div class='footerInfo'>
+
+                    
+
+                    <!-- <p>
+                        WhatsApp: <a style='text-decoration:none'
+                            href='https://api.whatsapp.com/send?phone=998913530063'>+998 &nbsp;(91)&nbsp;353-00-63</a>
+                    </p> -->
+                    <p style='color:#ed7d31;margin-top:12px'>Гоя, таклифлар</p>
+                    <p>
+                        Шахсий алока: <a href='https://t.me/fantan_basseyn'>Савол бериш</a>
+                    </p>
+
+                    <p style='color:#ed7d31'>Батафсил саволлар</p>
+
+                    <p>
+                        Почта: <a href='mailto:artbetonbohodir@gmail.com'>artbetonbohodir@gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="telegram-block">
+
+                    <div
+                        style="display:flex;border: solid 1px #ffffff6b;padding:10px;border-radius:  8px 8px 0 0;position: relative;">
+                        <div class="qr-telegram"></div>
+
+                        <div
+                            style="display: flex;flex-direction:column;justify-content:space-around;align-items: center;text-align: center;">
+                            <div style="display: flex;">
+                                <p style="color:#000000;font-size: 14px;">Telegram канал</p>
+                            </div>
+                            
+                            <p style="margin-left:10px;font-size: 13px;">Cканируйте QR-код,<br> чтобы открыть с другого
+                                устройства</p>
+                        </div>
+                        <p class="ili">или</p>
+                    </div>
+
+                    <a class="contact-url-telegram" style='text-decoration: none;' href='https://t.me/fantanuz'>
+                        <p>Шу курулмадан очиш</p>
+                    </a>
+                </div>
+
+
+                <div class="contact-block">
+                    <div class="contact-block-header">
+                        <p>Биз хакимизда</p>
+                    </div>
+    
+    
+                    <p style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate magnam, praesentium animi delectus asperiores aliquam nisi iste sequi odit ea soluta dicta corporis natus fuga! Expedita corrupti consequatur assumenda recusandae.</p>
+    
+                </div>
+
+                <div class='footerInfo'>
+                    <p class='terms purl'>Пользовательское соглашение</p>
+                    <p class='privacy purl'>Политика конфиденциальности</p>
+                </div>
+
+
+
+            </div>
+            <div
+                style='display:flex;justify-content:center;width:90%;max-width:1000px;border-top:solid 1px #444;margin:0 auto;text-align:center;position:relative'>
+                <p style='font-size:12px;padding:16px 0;line-height:1.7'>
+                    Разработчик сайт Бахром Мурожат учун +998913530063<br>© 2019 «Все права
+                    защищены
+                </p>
+                <div class='paylogo'></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <!-- <script src="app.js"></script> -->
     <script src="telegram.js"></script>
     <script src="portfolio.js"></script>

@@ -7,16 +7,17 @@ from aiogram.fsm.context import FSMContext
 from aiogram.filters.command import Command 
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, WebAppInfo
 
-bot = Bot(token="7165989174:AAF3CzWo1YC8Er2rqK5eraykWd-2nkL9TU0")
+bot = Bot(token="6841846251:AAGIYkIDeBIO62xQMEvCXHZJCvB2cR8QKGc")
 dp = Dispatcher()
 
 @dp.message(Command('start'))
 async def start(message: types.Message, state: FSMContext):
     
-    item1 = KeyboardButton(text="⛲️ Сайт", web_app=WebAppInfo(url="https://bahrom88ak.github."))
-    item2 = KeyboardButton(text="✍️ Gruxga qushilish", web_app=WebAppInfo(url="https://t.me/fantanuz"))
-    keyboard = ReplyKeyboardMarkup (keyboard=[[item1],[item2]], resize_keyboard=True)
-    await bot.send_message(message.from_user.id, "Assalomu aleykum! * Faberli3 🛍 * shaxsiy gruxga obuna bulishni unutmang   Men shaxsiy bot xizmatidan foydalanganim sabab ishim juda kup ulgurmayapman, online ishga kirish va sotib olish saxifa mavjud! tugmalardan foydalanib xarid qilish yoki ishga kirishingiz mumkin🙂 Botni qayta ishga tushirish tugmasi /start ", reply_markup=keyboard, parse_mode="Markdown")
+    item1 = KeyboardButton(text="⛲️ Сайт", web_app=WebAppInfo(url="https://artbeton.github.io/artbeton-github.com/"))
+    item2 = KeyboardButton(text="✍️ Kanalga kirish", web_app=WebAppInfo(url="https://t.me/fantanuz"))
+    item3 = KeyboardButton(text="📌 Manzilga borish", web_app=WebAppInfo(url="https://maps.app.goo.gl/xdo7b7NmNq8PniSv5"))
+    keyboard = ReplyKeyboardMarkup (keyboard=[[item1],[item2],[item3]], resize_keyboard=True)
+    await bot.send_message(message.from_user.id, "Assalomu aleykum! * Fantanuz * shaxsiy kanalga obuna bulishni unutmang  tugmalardan foydalanib батафсил малумотга танишиб чикинг🙂 Botni qayta ishga tushirish tugmasi /start ", reply_markup=keyboard, parse_mode="Markdown")
     
 
 @dp.message()

@@ -26,14 +26,15 @@ body{
 }
 
 .inner{
-
+    /* display: grid; */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px 200px;
-    grid-gap: 50px;
+    /* grid-gap: 50px; */
+    text-align: center;
 }
 
 .img{
-    width: 150px;
+    width: 230px;
 }
 
 .item{
